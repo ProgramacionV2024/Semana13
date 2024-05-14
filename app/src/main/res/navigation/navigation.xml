@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/insertMascotaFragment">
+
+    <fragment
+        android:id="@+id/insertMascotaFragment"
+        android:name="com.jalfaro.semana12.view.InsertMascotaFragment"
+        android:label="fragment_insert_mascota"
+        tools:layout="@layout/fragment_insert_mascota" >
+        <action
+            android:id="@+id/action_insertMascotaFragment_to_selectMascotaFragment"
+            app:destination="@id/selectMascotaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectMascotaFragment"
+        android:name="com.jalfaro.semana12.view.SelectMascotaFragment"
+        android:label="fragment_select_mascota"
+        tools:layout="@layout/fragment_select_mascota" />
+</navigation>
